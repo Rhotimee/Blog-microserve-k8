@@ -6,7 +6,7 @@ import CommentList from "./CommentList";
 const PostList = () => {
   const [posts, setPosts] = useState({});
   useEffect(() => {
-    Axios.get("http://localhost:4002/posts").then((res) => {
+    Axios.get("http://posts.com/posts").then((res) => {
       console.log(res.data);
       setPosts(res.data);
     });
